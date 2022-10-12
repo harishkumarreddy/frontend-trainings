@@ -3,8 +3,8 @@
 <head>
     <title>Data</title>
 </head>
-<body>
-    <h1>Lists:</h1>
+<body calss="container blue-theam">
+    <h1 class="hradding">Lists:</h1>
     <ol>
         <li>One
             <ol style="list-style:lower-roman ;">
@@ -19,7 +19,7 @@
         <li>Four</li>
         <li>Five</li>
     </ol>
-    <ul style="list-style:upper-alpha ;">
+    <ul style="list-style:upper-alpha;">
         <li>One:
             <ul style="list-style:georgian ;">
                 <li>a</li>
@@ -34,15 +34,15 @@
         <li>Five</li>
     </ul>
     <hr />
-    <dl>
-        <dd>Address</dd>
-        <dd>Line1</dd>
-        <dd>Area</dd>
-        <dd>Pin code</dd>
+    <dl id="address">
+        <dd id="address-title">Address</dd>
+        <dd id="address-line1">Line1</dd>
+        <dd id="address-area">Area</dd>
+        <dd id="address-pincode">Pin code</dd>
     </dl>
     <hr />
-    <h1>Tables:</h1>
-    <table border="1">
+    <h1 class="hradding" id="hradding" style>Tables:</h1>
+    <table border="1" id="table1" dara-sample="it is a sample" data-dummy="{name:'harish', ph:'123456789'}">
         <tr>
             <td>
                 1
@@ -78,7 +78,7 @@
         </tr>
     </table>
     <hr />
-    <table border="1">
+    <table border="1" name="student-tabe">
         <caption>Student Data</caption>
         <thead>
             <tr>
