@@ -22,6 +22,8 @@ typs:
 ## Break line
 ## Images
 ## Line (Horizontal rouler)
+## Anchore
+## Forms & controls
 
 # Data representation:
 ## List
@@ -31,3 +33,20 @@ typs:
 #### LI
 ## Tables
 ## Git
+
+# Attributes
+## common
+1. class -> selector (.)
+2. id -> selector(#)
+3. name -> selector
+4. data -> data binder
+5. width -> width property
+6. height -> height property
+7. style -> styling css properties
+## eliment/group 
+1. src -> source location for image or script
+2. href -> link reffarance for anchar or link
+3. type -> form controll type proprty
+4. value -> form controle value propery
+5. target -> target location of the form or anchore
+6. mehoad -> Form submit type property
