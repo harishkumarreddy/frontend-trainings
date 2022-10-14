@@ -23,7 +23,27 @@ typs:
 ## Images
 ## Line (Horizontal rouler)
 ## Anchore
-## Forms & controls
+## Form & controls
+####Inputs
+1. Single line text
+2. Multi line text
+3. Number
+4. Date
+5. Time
+6. calander/Dataeandtime
+7. Email
+8. URL
+9. file
+10. Check boxes
+11. Radio/option Buttons
+12. Submit Button
+13. Reset Button
+####Buttons 
+* Custome buttons
+####Dropdowns
+1. Single select Dropdown
+2. Multi select list
+
 
 # Data representation:
 ## List
