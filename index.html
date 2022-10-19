@@ -4,16 +4,49 @@
         <title>Home Page</title>
         <link rel="shortcut icon" href="./images/logo.png">
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap" rel="stylesheet">
+        <style>
+
+            *{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                margin: 0px;
+            }
+
+            body{
+                background-color: yellow !important;
+                background-image:url("https://toppng.com/uploads/preview/atron-silver-tequila-750ml-patron-tequila-11563229737hitnvpc6f7.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100px;
+            }
+
+            .body-styles{
+                background-color: yellowgreen !important;
+            }
+            .a-style {
+                font-family: 'Beau Rivage', cursive;
+                color: rgb(0, 242, 255);
+            }
+
+            #title{
+                background: whitesmoke !important;
+                border-bottom: 2px;
+                /* border-bottom-style: dashed; */
+                box-shadow: 0px 3px 4px 0px #878787;
+            }
+        </style>
     </head>
-    <body>
+    <body style="background-color: blue !important ;" class="body-styles">
         <!-- HTML Comment -->
-        <h1>Hello World!</h1>
+        <h1 id="title" style="background-color: red;">Hello World!</h1>
         <!-- TODO: Make this document clear -->
         <!-- WARNING: somthing -->
         <!-- Note: Shotcut for comments ctrl+/ -->
 
-        <a href="./data.html" target="_self">Data</a> <br/>
-        <a href="./typography.html" >Typography</a> <br />
-        <a href="https://google.com" target="_blank">google</a>
+        <a style="color: white;" href="./data.html" target="_self">Data</a> <br/>
+        <a class="a-style" href="./typography.html" >Typography</a> <br />
+        <a class="a-style" href="https://google.com" target="_blank">google</a>
     </body>
 </html>

@@ -54,6 +54,7 @@ typs:
 ## Tables
 ## Git
 
+
 # Attributes
 ## common
 1. class -> selector (.)
@@ -70,3 +71,14 @@ typs:
 4. value -> form controle value propery
 5. target -> target location of the form or anchore
 6. mehoad -> Form submit type property
+
+
+# CSS: Cascading Style Sheet: (V3) -> CSS3
+### Basic styling
+### Box Modeling
+### Animationas
+
+## Ways:
+1. inline styling with style attribute
+2. internal styling with style tag
+3. extenam styling with css file 
