@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Beau Rivage', cursive, sans-serif;
+}
+
+.left-conotainer{
+    width: 300px;
+    height: calc(100vh - 154px);
+    background-color: #2196f3;
+    text-align: center;
+    padding-top: 10%;
+    display: block;
+    float: left;
+}
+
+.profile-pic{
+    width: 200px;
+    height: 200px;
+    border: solid 5px #ffffff87;
+    border-radius: 50%;
+    background-color: #ffffff62;
+    margin-bottom: 20px;
+}
+
+.nav{
+    list-style: none;
+}
+.nav > a{
+    color:#ffffff87;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 4px 0px;
+    text-decoration: none;
+}
+
+.nav > a:hover{
+    color:#ffffffbf;
+}
+.nav > a > li{
+    padding:10px;
+    margin: 4px 0px;
+}
+
+.nav > a.active{
+    color:#ffffff;
+}
+
+.right-conotainer{
+    height: calc(100vh - 41px);
+    width: calc(100% - 341px);
+    display: block;
+    float: left;
+    background-image: url("https://media.istockphoto.com/photos/abstract-technology-wave-pattern-on-white-background-picture-id1251486554?b=1&k=20&m=1251486554&s=612x612&w=0&h=3cgdqPk7LQm_joSoZMgIB_RkFzsz7zxLVkY2isMotqI=");
+    background-size: cover;
+    padding: 20px;
+}
+
+.logo-section{
+    margin-bottom: 20px;
+}
+.logo-section > img.profile-logo{
+    width: 100px;
+    height: 100px;
+}
+.logo-section > div.profile-text{
+    font-size: 45px;
+    font-weight: bold;
+    color: #2196f3;
+    margin-top: -80px;
+    margin-left: 110px;
+}
+
+.names-section{
+    margin-top: 3rem;
+}
+.names-section > h1{
+    font-size: 55px;
+}
+.names-section > h1 > span{
+    color:#2196f3;
+}
+.content{
+    margin-top: 5rem;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.socialmedia ul{
+    list-style: none;
+    display: block;
+}
+
+.socialmedia ul li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #464646;
+    background-image: url("https://spng.pngfind.com/pngs/s/262-2627215_redes-sociales-logos-png-facebook-email-icons-png.png");
+}
+
+.socialmedia ul li.fb{
+    background-position-x: -4px;
+    background-size: 200px;
+    background-position-y: 55px;
+}
+
+.socialmedia ul li.lin{
+    background-position-x: -144px;
+    background-size: 199px;
+    background-position-y: 124px;
+}
+
+.socialmedia ul li.tw{
+    background-position-x: -75px;
+    background-size: 206px;
+    background-position-y: 197px;
+}
+
+.socialmedia ul li.ins{
+    background-position-x: -72px;
+    background-size: 197px;
+    background-position-y: 123px;
+}

@@ -82,3 +82,11 @@ typs:
 1. inline styling with style attribute
 2. internal styling with style tag
 3. extenam styling with css file 
+
+##  Events (CSS)
+1. Mouse Events
+    * Hover
+    * Active
+2. Keyboard Esvents
+    * focus
+    ** blur

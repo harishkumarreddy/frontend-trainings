@@ -47,6 +47,7 @@
     height: 30px;
     text-align: center;
     padding-top: 5px;
+    border: solid 1px transparent;
 }
 
 .nav-items > a{
@@ -70,4 +71,14 @@
 }
 .nav-item:last-child{
     margin: 6px;
+}
+
+.nav-item:hover,
+.nav-items > a:focus > .nav-item{
+    border: solid 1px brown;
+    border-radius: 10px 2px;
+}
+
+.nav-item:active{
+    background-color: rgba(165, 42, 42, 0.5);
 }
