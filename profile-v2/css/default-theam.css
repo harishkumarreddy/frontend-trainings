@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.bg-dark{
+    background-color: #1a1a1a;
+    color: #eeeeee;
+}
+
+.bg-ligh{
+    background-color: #eeeeee;
+    color: #1a1a1a;
+}
+
+.bg-blue{
+    background-color: #1b7bf9;
+    color: #eeeeee;
+}
+.borderd{
+    border: solid 1px #1a1a1a;
+}
+.border-2x{
+    border-width: 2px;
+}
+.border-3x{
+    border-width: 4px;
+}
+
+.border-dotted{
+    border-style: dotted;
+}
+.border-dadhed{
+    border-style: dashed;
+}
+
+.border-light{
+    border-color: #eeeeee !important;
+}
+.border-blue{
+    border-color: #1b7bf9 !important;
+}
+.border-top{
+    border-top: solid;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+.border-right{
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: solid;
+}
+.border-bottom{
+    border-top: none;
+    border-bottom: solid;
+    border-left: none;
+    border-right: none;
+}
+.border-left{
+    border-top: none;
+    border-bottom: none;
+    border-left: solid;
+    border-right: none;
+}
+
+.border-rounded{
+    border-radius: 5px;
+}
+.border-rounded-tl{
+    border-top-left-radius: 5px;
+}
+.border-rounded-tr{
+    border-top-right-radius: 5px;
+}
+.border-rounded-br{
+    border-bottom-right-radius: 5px;
+}.border-rounded-bl{
+    border-bottom-left-radius: 5px;
+}
+.circle{
+    border-radius: 50%;
+}
+
+.shadow{
+    box-shadow: 0px 0px 5px 1px #888888;
+}
+
+.txt-dark{
+    color: #1a1a1a;
+}
+.txt-light{
+    color: #eeeeee;
+}
+.txt-blue{
+    color: #1b7bf9;
+}
+
+.txt-2x{
+    font-size: 14px;
+}
+.txt-3x{
+    font-size: 16px;
+}
+.txt-l{
+    font-size: 18px;
+}
+.txt-xl{
+    font-size: 20px;
+}
+.txt-xxl{
+    font-size: 25px;
+}
+.txt-center{
+    text-align: center;
+}
+.p5{
+    padding: 5px;
+}
+body{
+    padding: 10%;
+}

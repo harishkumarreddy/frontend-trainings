@@ -58,8 +58,24 @@
     padding: 20px;
 }
 
+@keyframes smalAnimation {
+    0%{transform: translateX(0px);}
+    /* 50%{} */
+    100%{transform: translateX(1000px);}
+}
+
 .logo-section{
     margin-bottom: 20px;
+    position: relative;
+    /* transform: rotateY(83deg); */
+    /* transform: rotateX(180deg); */
+    /* transform: rotateZ(45deg); */
+    /* transform: rotate3d(1, 1, 0, 253deg); */
+    /* transform: translateX(497px); */
+    width: 250px;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: smalAnimation 2s infinite;
+    animation-timing-function: cubic-bezier(0.68, 0.23, 0, 1.51);
 }
 .logo-section > img.profile-logo{
     width: 100px;
