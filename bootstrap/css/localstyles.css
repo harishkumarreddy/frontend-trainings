@@ -1,0 +1,152 @@
+*{
+    /* margin: 0;
+    padding: 0; */
+    font-family: san-serif,serif, geneva,tahoma,verdana;
+
+}
+/* .fb{
+    display: inline-block;
+    width: 10px;
+    height: 15px;
+    padding: 0;
+    
+}
+.fb img {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 521px;
+    
+}
+.twitter {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    
+}
+.twitter img {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 335px;
+}
+    
+.insta {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    
+}
+.insta img {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 136px;
+}
+
+.main-content{
+    display: block;
+    width: 50%;
+    position: absolute;
+    top: 120px;
+    left: 118px;
+    font-size: 60px;
+    font-family: serif;
+    font-weight: bold;
+}
+.main-content h3{
+    display: inline-block;
+    margin-top: 30px;
+    font-family: serif;
+    font-size: 15px;
+}
+.appointment {
+    display: block;
+    width: 165px;
+    height: 60px;
+    margin-top: -254px;
+    margin-left: 120px;
+    text-align: center;
+    border: 2px solid #0046c0;
+    color: #fff;
+    background-color: #0046c0;
+    border-radius: 4px 4px;
+}
+.appointment h4{
+    display: inline-block;
+    width: 140px;
+    margin-top: 17px;
+    font-family: serif;
+    font-size: 15px;
+   
+
+}
+.learnmore {
+    display: block;
+    width: 165px;
+    height: 60px;
+    margin-top: -61px;
+    margin-left: 310px;
+    text-align: center;
+    border: 2px solid #0046c0;
+    color: #fff;
+    background-color: #0046c0;
+    border-radius: 4px 4px;
+}
+.learnmore h4{
+    display: inline-block;
+    width: 140px;
+    height: 40px;
+    margin-top: 18px;
+    font-family: serif;
+    font-size: 15px;
+   
+}
+.appointment:hover {
+    color: #0046c0;
+    background-color: #fafafa9d;
+}
+.learnmore:hover {
+    color: #0046c0;
+    background-color: #fafafa9d;
+} */
+
+
+
+.slider-btns{
+    position: relative;
+    top:-200px;
+    left: 100px;
+}
+
+.navbar{
+    max-width: 100%;
+}
+.navbar form.d-flex{
+    width:80px;
+}
+.navbar form.d-flex input.form-control{
+    display: none;
+}
+.social-icons{
+    margin-left: -10px ;
+}
+.social-icons img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.social-icons div.col{
+    width: 30px;
+}
+
+.carousel-item{
+    width: 100% !important ;
+    height: 400px !important;
+    background-size: contain ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color:var(--bs-blue);
+}
