@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditins</title>
+</head>
+
+<body>
+    <h1>Conditions</h1>
+    <h3>check in console</h3>
+
+    <script>
+        // SImple IF
+        // syntax: if(condition){ block of statements}
+        // syntax: if(condition && condition || consition){ block of statements}
+        var gender = "f";
+        console.log(gender == "m");
+        if (gender == "m"){
+            console.log('Gender is male');
+        }
+
+
+        // IF...else
+        // syntax: if(condition){ block of statements}else{block of statements}
+        // syntax: if(condition && condition || consition){ block of statements}else{block of statements}
+        
+        // if the customer in india, the currency should be INR
+        // other than india, he should use only USD
+
+        var country = "india";
+        var valet_amount = 1000; // it is in INR
+        var inr2usd = (1 / 83);
+        var adjusted_amount = 0;
+        var cur_sym = "INR";
+
+        console.log(country === "india");
+        if (country === 'india') {
+            console.log('you can use INR only');
+            adjusted_amount = valet_amount;
+            cur_sym = "INR";
+        }
+        else {
+            console.log('you can use USD only');
+            adjusted_amount = valet_amount * inr2usd;
+            cur_sym = "USD"
+        }
+
+        console.log('condition finished');
+        console.log(cur_sym + adjusted_amount.toFixed(2));
+
+        // IF...elseif...else
+        // syntax: if(condition){ block of statements}else if(condition){ block of statements}else{block of statements}
+        // syntax: if(condition && condition || consition){ block of statements}else if(condition){ block of statements}else{block of statements}
+        // case sencitive: a is not equal to A
+        var gender = "M";
+        if (gender.toLowerCase() === "m"){
+            console.log('Gender is male');
+        }else if(gender.toLowerCase() === "f"){
+            console.log('Gender is female');
+        }else if(gender === ""){
+            console.log('Gender is not filled');
+        }else{
+            console.log('Gender is others');
+        }
+
+        // nested IF
+        // syntax: if(condition){if(condition){ block of statements} }
+        var pase_mark = 35;
+        var marks = 70;
+        var result;
+        var grade;
+
+        if(marks>=pase_mark){
+            result = "P";
+            /*
+                first: >=65
+                secound: >=45 and < 65
+                regular: < 45
+            */
+            if(marks >= 65){
+                grade = "First";
+            }else if(marks >= 45 && marks < 65){
+                grade = "Secound";
+            }else{
+                grade = "Regular";
+            }
+        }else{
+            result = "F";
+            grade = "-NA-"
+        }
+
+        console.log("Marks: "+ marks);
+        console.log("Result: "+ result);
+        console.log("Grade: "+ grade);
+
+        let leter = "c";
+        let word;
+        // Switch case
+        switch (leter) {
+            case "a":
+                word = "Apple"
+                break;
+            case "b":
+                word = "Ball"
+                break;
+
+            default:
+                word = "-NA-"
+                break;
+        }
+        console.log(leter + " for " + word)
+    </script>
+</body>
+
+</html>

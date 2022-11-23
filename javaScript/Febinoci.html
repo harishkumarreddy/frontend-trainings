@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Enter a number: 
+    <input type="number" id="mynumber" value="10" />
+    <button type="button" onclick="getFebinocci()">Submit</button>
+    <p>Febinocci numbers:</p>
+    <p id="output"></p>
+
+    <script>
+        function getFebinocci() {
+            var n = document.getElementById("mynumber").value;
+            var output = "0, 1";
+            var x = 0;
+            var y = 1;
+            var z;
+            for (let i = 0; i < n - 2; i++) {
+                z = x + y;
+                output += ", "+z;
+                x = y;
+                y = z;
+            }
+            document.getElementById('output').innerText = output;
+        }
+
+        getFebinocci();
+
+    </script>
+</body>
+
+</html>

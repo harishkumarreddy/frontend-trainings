@@ -46,8 +46,8 @@ A. Core Concepts
         5. Date
         6. Time
         7. Array
-            1. silple array, 2D, 3D, nD
-            2. Object
+            1. silple array, 2D, 3D, nD // []
+            2. Object {}
             3. JSON
         8. NaN
         9. Null
@@ -55,6 +55,16 @@ A. Core Concepts
 
     2. Variables
     3. Operators
+        3.1 Arithmetic operatopers => +,-,*,/,%,**
+        3.2 Assignment operators
+            a. Simple => =
+            b. Incrimental => ++
+            c Decrimental => --
+            d Combinded => +=, -=, *=, /=, %=, **=
+        3.3 Comparition Operators => ==, ===, >, >=, >==, <, <=, <==, !=
+        3.4 Logical Operators => &&, ||, !, ?
+        3.5 Relational/Type operators => typeof, instanceof
+        3.6 Bitwise Operatopr => &, |, !, >>, <<,
     4. Decession making
         4.1. IF
         4.2. If...Else
@@ -69,13 +79,14 @@ A. Core Concepts
 
 B. Advanced Concepts
     1. JS Advaced Level
-        1. async Programm
+        1. DOM(document Object Module) manipilation
+        2. async Programm
             1. Call backs
             2. Promices
             3. async ... await
-        2. Prototyping
-        3. Event management
-        4. DOM manipilation
+        3. Prototyping
+        4. Event management
+
 
     2. OOPs
         1. Class

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Functions</h1>
+    <h3>Check in console</h3>
+    <div id="content">
+        <h1>Elm with ID</h1>
+    </div>
+    <div class="content"><h1>Elm with class</h1></div>
+    <div class="content"><h1>Elm with class</h1></div>
+    <script type="text/javascript" >
+        // FUnctions
+        // syntax: function function_name(parameters ...) { block of code }
+
+        // add two numbers
+        // var a =1;
+        // var b = 2;
+        // c = a+b;
+
+        // a = 3;
+        // b = 4;
+        // c = a+b
+
+        //symbles:
+        /* 
+            . -> dot/periad
+            ! -> not/escalation
+            @ -> at the rate
+            # -> hash
+            $ -> dollor
+            % -> modless
+            ^ -> cap
+            & -> and/amprasent
+            | -> pipe
+            / -> forward slash
+            \ -> backward slash 
+            * -> star/into/tims/astrisk
+            ( -> open braket/open pranthases
+            ) -> close braket/close pranthases
+            - -> minus/hyphan/dash
+            _ -> undersqor/lodash
+            " -> dobul quotation
+            ' -> single quotation
+            ` -> back tick
+            { -> open flower braket / open curly brease
+            } -> close flower braket / close curly brease
+            [ -> open big bracket / open Sqar braket / open bracket
+            ] -> close big bracket / close Sqar braket / close bracket
+            : -> coolone
+            ; -> semi coolone
+            -> : arrow
+            => : fat arrow
+        */
+    //    confusion matrix: + x - = -
+    /*
+            T && T = T
+            F && F = T
+            T && F = F
+            F && T = F
+            T || T = T
+            T || F = F
+            F || F = F
+    */
+        function add(a, b){
+            let result = null;
+            // fail-fast
+            // if(typeof(a) !=="number" && typeof(b) !=="number"){
+            if(typeof(a) !=="number" || typeof(b) !=="number"){
+                console.log("Only numbers can be accaptable.")
+            }else{
+                result = a+b;
+                // console.log(result);
+            }
+
+            // let a = 1;
+            // let b = 2;
+            // console.log(a+b);
+
+            return result;
+        }
+
+        // strict Dicluration => int a, string b ... // dim a as integer // val int a // let a:int
+        // loose dicluration => var a, var b.... let a
+
+        let r1 = add(1,2);
+        console.log(r1)
+        console.log(add(3,4));
+        add(10, 35);
+        add();
+        add("a");
+        add("abc", "xyz");
+        add("", "");
+        add("a", 123);
+    </script>
+</body>
+</html>

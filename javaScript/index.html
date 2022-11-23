@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>check in console.</h1>
+    <script type="text/javascript">
+        // Datatyps
+        /*
+            Numarical
+                standerd numbers 0,1,2 ...
+                long 78010707101212
+                floating points 5.4, 60.5, 80.78
+                dobule 57.897654655
+                bit 0 or 1
+            Text formed
+                charector
+                    alphabit a..z
+                    digit 0,1,3 ... 9
+                    symbles . , +, - _ ? ...
+
+        Data Types:
+        Primithive
+            1. Number
+                a. bit => 0 or 1
+                b. Int => 0,1,2 ...
+                c. Float => 5.4, 60.5, 80.7856, 3.1416
+                d. Long => 12345678910 ... 
+                e. Double => 57.897654655
+            2. Char => a..z, 0,1,3 ... 9, . , +, - _ ? ...
+            3. Boolean => true / false
+
+        Non-Primithive    
+        3. String => harish, Suresh, Dhilip "James bond 007, "
+        5. Date => 10/Mar/2022, 
+        6. Time => 23:30:00 
+        7. Array => [1, 2,3,]
+            1. silple array, 2D, 3D, nD
+            2. Object
+            3. JSON
+        8. NaN => Not a Number
+        9. Null => empty => user defended
+        10. Undefiend => empy => JS Definded
+        */
+
+        // Variables
+        // Dicluration keywords
+        // var -> global scope variable 
+        // let -> block scope variable ES5 - ES2015
+        // const -> same as let but not changable ES5 - ES2015
+
+        var my_name = "harishkumar";
+        var age = 35;
+        var contact = 7801070710;
+        var height = 5.9;
+        var avg_running_speed = 30.54321;
+        var is_married = true;
+        var dob = new Date("2-Sept-1987 4:30 PM");
+        var day_starts_at = new Date();
+        var income = null;
+        var cur_job;
+
+        console.log(my_name);
+        console.log(age);
+        age = "my age";
+        console.log(age);
+        console.log(contact);
+        console.log(height);
+        console.log(avg_running_speed);
+        console.log(is_married);
+        console.log(dob);
+        console.log(day_starts_at);
+        console.log(income);
+        console.log(cur_job);
+
+        console.log("-----------------------------------------");
+
+        // var addres = "Hyderabad";
+        let addres = "Hyderabad";
+        console.log(addres);
+
+        {
+            // console.log(addres);
+            // var addres = "Nellore";
+            let addres = "Nellore";
+            console.log(addres);
+        }
+        console.log(addres);
+        addres = "Kondapur";
+        console.log(addres);
+
+        const pi = 3.1416;
+        console.log(pi);
+        delete pi;
+        console.log(pi);
+        delete my_name;
+        console.log(my_name);
+        // const pi = 2.1416;
+    </script>
+</body>
+
+</html>

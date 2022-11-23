@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>3.1 Arithmetic operatopers => +,-,*,/,%,**</h1>
+    <h3>Check In Console</h3>
+    <script>
+        var x = 2;
+        var y = 5;
+        var z;
+        console.log("x=", x, ", y=", y);
+        console.log("Arithmetic operatopers")
+        z = x+y;
+        console.log("+ ",z);
+
+        z = x-y;
+        console.log("-", z);
+        
+        z = x*y;
+        console.log("*",z);
+
+        z = x/y;
+        console.log("/",z);
+
+        z = x%y;
+        console.log("%",z);
+
+        z = x**y;
+        console.log("**",z);
+
+        // Math
+        z = Math.ceil(10.50);
+        console.log(z);
+        z = Math.round(10.50);
+        console.log(z);
+        z= Math.round(10.345);
+        console.log(z);
+        z = Math.floor(10.60);
+        console.log(z);
+
+        console.log("Assignment operators")
+        z = 0;
+        console.log("z=",z);
+        z++; // z= z+1
+        console.log("z++",z);
+        z--; // z = z-1
+        console.log("z--",z);
+
+        z += 10;
+        console.log("z+=",z);
+
+        z -= 5;
+        console.log("z-=",z);
+
+        z *= 5;
+        console.log("z*=",z);
+        z /= 5;
+        console.log("z/=",z);
+        z %= 5;
+        console.log("z%=",z);
+        z **= 5;
+        console.log("z**=",z);
+        
+        console.log("Comparition Operators");
+        console.log("x=", x, ", y=", y);
+        console.log("x==y", x==y);
+        console.log("10=='10'", 10=='10');
+        console.log("x===y", x===y);
+        console.log("10==='10'", 10==='10');
+        console.log("x>y", x>y);
+        console.log("x>=y", x>=y);
+        // console.log("x>==y", x>==y);
+        console.log("x<y", x<y);
+        console.log("x<=y", x<=y);
+        // console.log("x<==y", x<==y);
+        console.log("x!=y", x!=y);
+
+        console.log("Logical Operators");
+        console.log("x=", x, ", y=", y);
+        console.log("&&", x==5 && y==5);
+        console.log("||", x==5 || y==5);
+        console.log("!", !(x==5));
+        
+        console.log("Relational/Type operators");
+        x= 5;
+        y = '10';
+        console.log(typeof(x))
+        console.log(typeof(y))
+        
+    </script>
+</body>
+</html>

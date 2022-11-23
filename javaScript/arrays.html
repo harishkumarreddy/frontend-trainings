@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arrays:</h1>
+    <p>List of values</p>
+    <hr>
+    <table>
+        <tr>
+            <th>Student name:</th>
+            <td id="stuName"></td>
+        </tr>
+        <tr>
+            <th>Contact:</th>
+            <td id="contact"></td>
+        </tr>
+        <tr>
+            <th>Email:</th>
+            <td id="email"></td>
+        </tr>
+    </table>
+
+    <script type="text/javascript">
+        // var stu_name = "Suresh";
+        // var stu_contact = "7801070710";
+        // var stu_email = "Suresh@gmail.com";
+
+        // var student = ["Suresh", "7801070710", "Suresh@gmail.com"];
+        // console.log(student);
+        // console.log(student[0]);
+        // console.log(student[1]);
+        // console.log(student[2]);
+
+        // student[0] = "Harish";
+        // document.getElementById('stuName').innerText = student[0];
+        // document.getElementById('contact').innerText = student[1];
+        // document.getElementById('email').innerText = student[2];
+        var student = {
+            "name" : "Suresh", 
+            "contact" : "7801070710", 
+            "email": "Suresh@gmail.com"
+        };
+        document.getElementById('stuName').innerText = student['name'];
+        document.getElementById('contact').innerText = student.contact //student['contact'];
+        document.getElementById('email').innerText = student['email'];
+    </script>
+</body>
+</html>

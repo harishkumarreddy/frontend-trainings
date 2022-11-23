@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Enter some string:
+    <input type="input" id="myString" value="Welcome" />
+    <button type="button" onclick="str_reverce()">Submit</button>
+    <p>Reversed:</p>
+    <p id="output"></p>
+    <p id="output2"></p>
+
+    <script type="text/javascript">
+        function str_reverce() {
+            let input = document.getElementById("myString").value;
+            let output = "";
+            for (let i = input.length - 1; i >= 0; i--) {
+                output += input[i];
+            }
+            // console.log(output);
+            document.getElementById("output").innerText = output;
+            
+            let output2 = "";
+            if(output === input){
+                output2 = input+" is a plandrome.";
+            }else{
+                output2 = input+" is not a plandrome.";
+            }
+            document.getElementById("output2").innerText = output2;
+        }
+        
+    </script>
+</body>
+
+</html>
