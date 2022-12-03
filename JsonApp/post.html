@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./fonts/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30"
+                    height="24" class="d-inline-block align-text-top">
+                My Blog
+            </a>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row py-2" id="posts">
+            <div class="col-sm-12">
+                <div class="card">
+                    <img id="poster" src="" class="card-img-top img-thumbnail w-25 m-3">
+                    <div class="card-body">
+                        <h5 class="card-title" id="title"></h5>
+                        <p class="card-text" id="content"></p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="/JsonApp/" id="btnPrevious" class="btn btn-primary"> 
+                            <i class="fa fa-arrow-left"></i>
+                            Previous
+                        </a>
+                        <a href="/JsonApp/" class="btn btn-primary"> 
+                            <i class="fa fa-home"></i>
+                            Home
+                        </a>
+                        <a href="/JsonApp/" id="btnNext" class="btn btn-primary"> 
+                            Next
+                            <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./data.js"></script>
+    <script src="./post_action.js"></script>
+
+</body>
+
+</html>

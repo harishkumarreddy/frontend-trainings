@@ -1,0 +1,64 @@
+->> Print first 10 prime numbers
+-- prime numiber is a natural numbe and shuld be divisible by 1 and it self ex 1 x 5 and 5 x 1.
+-- 0 to 50
+    --- steps:
+        1.take each number from natural numbers
+        2.check the number is greaterthan 1 or not.
+        3.if the number is greaterthan 1, check whether it is divisable 
+            with all posibles from 1 to the taken number
+        4.if the divisable count is 2, treat that it is a prime number
+        5.repete the same process until you get 10 primenumbers
+
+?? is that the limit fixed as 10 or dynamic in the future?
+---> yes but might be later.
+
+Programetical algoritham:
+1. create a variable and take the value 2. coz, primary roule is greaterthan 1.
+2  ->> 2 ---> is prime
+        2%1 => 0
+        2%2 => 0
+
+    ->> 3 ---> prime number
+        3%1 => 0
+        3%2 => 0.69
+        3%3 => 0
+    ->> 4 not a prime
+        4%1 ==>0
+        4%2 ==>0
+        4%3 ==>~1
+        4%4 => 0
+
+        ......
+    Keep this in a loop until the count of marked as prime numbers reach the boundry.
+    Print the list of prime number.     
+-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+<script>
+    var n = 2;
+    var limit = prompt('How many prime numbers you want to print?', 10) //10
+    var primeNumbers = [];
+
+    // debugger;
+    let d1 = moment();
+    while (primeNumbers.length <limit) {
+        let divCount = 0;
+        for(let i=1; i<= n/2; i++){
+            if(n%i === 0){
+                divCount++;
+                if(divCount >1){
+                    break;
+                }
+            }
+        }
+
+        if(divCount === 1){
+            primeNumbers.push(n);
+        }
+        n++;
+    }
+
+    console.log(primeNumbers);
+    let diff = moment().diff(d1, 'h:mm:ss');
+    console.log(n);
+    console.log("process time: ",  diff)
+</script>

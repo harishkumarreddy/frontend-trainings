@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let data = ["apple", 'mango', 'banana'];
+        let data2 = {
+            'a': "apple",
+            'b': 'banana',
+            'm': 'mango'
+        };
+        // JSON -> Javascript Object Notation
+
+        let l = data.length;
+        console.log(data[l - 1]);
+        console.log(data);
+        data[1] = "a";
+        console.log(data);
+        data[1] = "b";
+        console.log(data);
+        data[1] = "c";
+        data[data.length] = "a";
+        data[data.length] = "b";
+        data[data.length] = "c";
+        console.log(data);
+        // data[20] = "l"
+        // console.log(data);
+
+        data.push('guva'); // data[data.length] = 'guva';
+        data.push('x'); // data[data.length] = 'guva';
+        data.push('y'); // data[data.length] = 'guva';
+        console.log(data);
+        data.unshift('Jack')
+        console.log(data);
+        data.pop()
+        console.log(data);
+        data.shift();
+        console.log(data);
+
+        // FIFO -> First-IN First-OUT
+        //  => unship, shift
+        // LIFO -> Last-IN First-OUT
+        //  => push, pop
+        // FILO -> Fist -In Lost-Out
+        //  => push, pop
+
+        let index = data.indexOf('mango');
+        console.log(index);
+        if (index >= 0) {
+            data[index] = "Tomato"
+            console.log(data);
+        } else {
+            console.log('Item not found')
+        }
+
+        let keys = Object.keys(data2);
+        let values = Object.values(data2);
+
+        console.log(data2);
+        console.log(keys);
+        console.log(values);
+
+        // 1st: Task: Digital Clock
+        // 2nd Task
+        // let a = [1,2,3,4]
+        // let p = getPoer(a, 3)
+        // calc Ex:[1^3, 2^3, 3^3, 4^3]
+        // output [1, 8, 27, 64]
+        // let p2 = getPoer(a)
+        // calc Ex:[1^1, 2^2, 3^3, 4^4]
+        //output [1, 4, 27, 256]
+
+        // simple Array : leanior  ex: x or y
+        // 2d Array: 2Dimentional  ex: x,y
+        // 3d array: 3Dimentional  ex: x,y,z
+        // nD array: nDimentional  ex: tree
+        let a1d = [1, 2, 3, 4, 5, 6];
+        let a1do = {
+            a: 1,
+            b: 2,
+        };
+        let a2d = [
+            [1, 1],
+            [2, 2],
+            [3, 3],
+            [4, 4]
+        ]
+        let a2do = {
+            a: {
+                x: 1,
+                y: 2
+            },
+            b: {
+                x: 1,
+                y: 2
+            },
+        }
+        let a3d = [
+            [
+                [1, 1, 1]
+            ],
+            [
+                [2, 2, 2]
+            ],
+            [
+                [3, 3, 3]
+            ],
+            [
+                [4, 4, 3]
+            ]
+        ]
+        let a3do = {
+            a: {
+                x: [1,2,3],
+                y: [1,2,3],
+                z: [1,2,3]
+            },
+            b: {
+                x: [1,2,3],
+                y: [1,2,3],
+                z: [1,2,3]
+            },
+        }
+
+        let nda = [
+            ['asd', 3, 5, "sdf", 'f3'],
+            [1, ['sadsa'], 'asdasd', 64]
+            [{ q: "q" }, { b: "b" }, { c: "c" }, ['sda']]
+        ]
+
+    let a1 = [
+        1,"ss", {'df':123}, [1,2,3,]
+    ];
+    console.log(a1[2]['df'])
+    console.log(a1[3][2])
+    let o1 = {
+        a: "a",
+        l: [1,2,3, {
+            'x':1,
+            'y':2
+        }],
+        f: function(a, b){
+            return a + b;
+        }
+    }
+    console.log(o1['l'][3].y);
+    console.log(o1.l[3].y)
+    console.log(o1.l[3].x)
+    console.log(o1.f(1,3))
+    </script>
+</body>
+
+</html>

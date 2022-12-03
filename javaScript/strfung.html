@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>String Functions</h1>
+    <p>check in the console</p>
+
+    <script type="text/javascript">
+        let name = "Harish kumar";
+        console.log(name)
+        let name2 = name.toUpperCase()
+        console.log(name2)
+        name2 = name2.toLowerCase()
+        console.log(name2)
+        console.log(name.length)
+        console.log(typeof(name2))
+        console.log(name2.replace("a", "@"))
+        console.log(name.replace(/r/g, "7"))
+        console.log(name.replace(/h/gi, "4"))
+        console.log(name.indexOf("h k"))
+        
+        // name2 = name.replace(/r/g, "7");
+        // name2 = name2.replace(/h/gi, "4")
+        // console.log(name2);
+
+        let age = "35";
+        console.log(typeof(age))
+        let age2 = parseInt(age);
+        console.log(typeof(age2))
+
+        console.log(name.split())
+        console.log(name.split(" "))
+        console.log(name.split(""))
+        console.log(name.split("", 4))
+
+        let name3 = "Yogendra Harishkumar reddy chowkicherla"
+        console.log(name3.split(" ", 5))
+
+        /// NUMBER Functions
+        let x = 123;
+        let y = 123.45654;
+        console.log(x)
+        console.log(x.toString())
+        console.log(parseFloat(x))
+        console.log(y.toFixed(2))
+        
+    </script>
+</body>
+</html>

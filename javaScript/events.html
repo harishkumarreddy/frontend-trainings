@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="padding: 15px; width: 200px;margin-left:calc(50% - 100px); margin-top: 10%; border: solid 1px; border-radius: 5px;">
+        <div>
+            <div >
+                <label for="username">Username</label>
+                <input type="text" id="username" onkeypress="valodateData(event)" onchange="valodateData(event)" onblur="valodateData(event)">
+            </div>
+            <div style="color: red;" class="err" id="err-user"></div>
+        </div>
+        <div>
+            <div >
+                <label for="password">Password</label>
+                <input type="password" id="password" onkeypress="valodateData(event)" onchange="valodateData(event)" onblur="valodateData(event)">
+            </div>
+            <div style="color: red;" class="err" id="err-password"></div>
+        </div>
+        <br />
+        <div>
+            <button type="button">Login</button>
+        </div>
+    </div>
+
+    <script>
+        var err_user = [];
+        var err_password = [];
+            
+        function valodateData(e){
+            console.log(e)
+            var u = e.target.id;
+            var v = e.target.value;
+            if( u === 'username'){
+                // username validations
+                if(v == ""){
+                    let ind = err_user.indexOf('*Username is required')
+                    if(ind <0){
+                        err_user.push('* Username is required')
+                    }                    
+                }else{
+                    let ind = err_user.indexOf('* Username is required')
+                    if(ind >=0){
+                        err_user.splice(ind, 1)
+                    }
+                }
+
+                if(v.length < 3){
+                    let ind = err_user.indexOf('* Username shuld be min 3 cars')
+                    if(ind >=0){
+                        err_user.push('* Username shuld be min 3 cars')
+                    }
+                }else{
+                    let ind = err_user.indexOf('*Username shuld be min 3 cars')
+                    if(ind >=0){
+                        err_user.splice(ind, 1)
+                    }
+                }
+            }else{
+                if(v == ""){
+                    err_password.push('Password is required')
+                }
+
+                if(v.indexOf('@') >=0 || v.indexOf('-') > 0){
+                    err_password.push('@,- are restrictued')
+                }
+            }
+
+            document.getElementById('err-user').innerHTML = err_user.join("</br>");
+            document.getElementById('err-password').innerHTML = err_password.join("</br>");
+
+        }
+    </script>
+</body>
+</html>
