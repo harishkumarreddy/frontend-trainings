@@ -80,12 +80,12 @@ A. Core Concepts
 B. Advanced Concepts
     1. JS Advaced Level
         1. DOM(document Object Module) manipilation
-        2. async Programm
+        2. Event management
+        3. async Programm
             1. Call backs
             2. Promices
             3. async ... await
-        3. Prototyping
-        4. Event management
+        4. Prototyping
 
 
     2. OOPs

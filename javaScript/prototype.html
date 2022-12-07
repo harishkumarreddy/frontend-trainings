@@ -1,0 +1,42 @@
+<script>
+    var stuData = {
+        'name': 'Harishkumar',
+        'contact': '+917801070710',
+        'dob': '02-09-1987'
+    }
+
+    stuData.__proto__.getAge = function () {
+        var dob = this.dob.split('-');
+        var d1 = new Date();
+        return d1.getFullYear() - parseInt(dob[2])
+    }
+
+    // Object.assign(stuData, function getAge(){
+    //         var dob = this.dob.split('-');
+    //         var d1 = new Date();
+    //         return d1.getFullYear() - parseInt(dob[2])
+    //     })
+
+
+
+    // function stuData(dob){
+    //     this.dob = dob;
+    //     // this.getAge = function(){
+    //     //     dob = this.dob.split('-');
+    //     //     var d1 = new Date();
+    //     //     return d1.getFullYear() - parseInt(dob[2])
+    //     // }
+
+    // }
+
+    // stuData.prototype.getAge = function () {
+    //     dob = this.dob.split('-');
+    //     var d1 = new Date();
+    //     return d1.getFullYear() - parseInt(dob[2])
+    // }
+
+    // var stu = new stuData('02-09-1987');
+
+
+    // console.log(stu);
+</script>

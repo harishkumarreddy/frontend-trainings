@@ -1,0 +1,36 @@
+<script>
+    // console.log(1);
+    // console.log(2);
+    // setTimeout(function () {
+    //     console.log(3);
+    //     console.log(4);
+    //     console.log(5);
+    // }, 2000);
+    // console.log(6);
+    // console.log(7);
+
+    async function printmessage(a,b){
+        setTimeout(function(){
+            if(b==0){
+            console.log('infinat')
+        }else{
+            console.log(a/b)
+        }
+        }, 3000)
+
+    }
+
+    var message;
+    async function getCalc(x,y){
+        await printmessage(x,y);
+        message = 'Success'
+        console.log(message)
+    }
+
+    console.log(1);
+    getCalc(2,0);
+    
+    console.log(2);
+
+
+</script>

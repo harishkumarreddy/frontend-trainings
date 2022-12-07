@@ -1,0 +1,9 @@
+.items-container{
+    max-height: calc(100vh - 120px);
+    height: calc(100vh - 120px);
+    overflow-y: auto;
+}
+.ipp{
+    position: absolute;
+    bottom: 20px;
+}
